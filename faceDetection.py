@@ -7,7 +7,7 @@ azure_face_api_key = "Key"
 azure_face_api_endpoint = "Endpoint"
 
 # url to image
-iamge_url = "IMAGE URL" # should send to SQL database
+image_url = "IMAGE URL" # should send to SQL database
 
 # azure face api endpoint
 face_api_url = f"{azure_face_api_endpoint}/face/v1.0/detect"
