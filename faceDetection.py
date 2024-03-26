@@ -3,8 +3,8 @@ from http.client import responses
 from io import BytesIO
 
 # azure face api key and endpoint goes here 
-azure_face_api_key = "b1fda5c17aa547c5a13a79d11b75c4f6"
-azure_face_api_endpoint = "https://smartringerapi.cognitiveservices.azure.com/T"
+azure_face_api_key = "Key"
+azure_face_api_endpoint = "Endpoint"
 
 # url to image
 iamge_url = "IMAGE URL" # should send to SQL database
