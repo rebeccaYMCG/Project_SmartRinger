@@ -1,10 +1,11 @@
-from gpiozero import MotionSensor, Button
+from gpiozero import MotionSensor, Button, Buzzer
 from datetime import datetime, timedelta
 from time import sleep 
 import subprocess
 
 motionSensor = MotionSensor(23) # these will be changed for actual GPIO pins
 button = Button(13)
+buzzer = Buzzer(15)
 
 # dates captured images
 def captureImage():
@@ -44,7 +45,11 @@ try:
         if button.is_pressed: 
             print("Button Pressed!")
             captureImage()
-        
+            # buzzer is played when button is pressed
+            buzzer.on() 
+            sleep(0.5)
+            buzzer.off()
+            
         sleep(10)
 
 except KeyboardInterrupt:
